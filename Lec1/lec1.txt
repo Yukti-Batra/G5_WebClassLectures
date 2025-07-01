@@ -1,0 +1,33 @@
+JS is synchronous, single threaded, compiled and interpreted both.
+Monolith  (a single place for all code)     -------->       Microservice
+Latency - delay in delivering data from server due to load
+throughput - Efficiency
+HLD(improve system configurations) & LLD(improve code)(high preference)
+DB based scaling  --Vertical scale, Horizontal scale         
+Server based scaling -- Horizontal(divide into multiple servers i.e. microservice breakdown) , vertical scaling(increase RAM, memory)
+
+JS :-
+Outside browser run using NODEJS(uses V8 engine)
+GEC- Global Execution Context = Whenever JS code runs it makes this
+It has memory side and execution
+Phase1(Memory) - Memory space allocation
+Puts undefined(in var), let(value unavailable) in variable and just gives space, puts function in memory as it is
+TIME BETWEEN the 2 PHASES IS TEMPORAL DEAD ZONE(TDZ)
+Phase2(Execution) - Variable declaration and execution.
+Makes execution context for functions (it has memory side and execution side of its own , it destroys context after printing function)
+Executes print statements, and assigns values in variables
+Call stack - GEC, all the functions and variables then after everything empty the call stack
+
+Var- not strict, redeclared, reintialized
+Let- came from ECMAScript6 , cannot be redeclared
+
+3 types of error : Syntax Error, Reference Error, Type Error
+var a= 0239;  It is wrong, number starting from 0 cannot be there
+In let reference Error when you print variable before declaring, in Var undefined.
+When call a function before declaring it can be called. But only when it is not stroed in a function.
+HOISTING - declaring all variables on top of code
+
+Function Types - anonymus(unnamed), named, arrow
+
+Lexical environment and scope= Top to bottom not possible, bottom to top possible
+var is wrapped in { } then makes a compound statement, cannot be accessed outside
