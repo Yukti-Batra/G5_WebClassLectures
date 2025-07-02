@@ -1,0 +1,6 @@
+Higher Order functions (HOF)- function that takes another function as argument or return a function (first class citizen)
+in react this is called Higher Order Component (HOC)
+Set timeout - Window object se ata hai
+debouncing -- settimeout thode time ke baad pop up ya suggestion dene ke liye
+
+NODEJS - Rest API -> CRUD
